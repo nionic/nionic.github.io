@@ -4,6 +4,7 @@
 body {
     margin: 0px;
 	font-family: sans-serif;
+	background-color: #f9f9f9;
 }
 body a{
 	text-decoration:none;
@@ -22,7 +23,7 @@ nav a {
     text-decoration: none;
 }
 nav a:hover {
-    color: #2d2d2d7d;
+    color:#4c4c4cfc;
     text-decoration: none;
 }
 .logo {
@@ -55,8 +56,12 @@ header {
     margin: 2em 0px 3.5em 0em;
     border-bottom: #bebebe85 solid 1px;
 }
+header h2 {
+    font-weight: 400;
+    font-size: 20px;
+}
 .home-content {
-    max-width: 176px;
+    max-width: 169px;
     display: -webkit-inline-box;
     margin: 10px;
     border: 1px #8080806e solid;
@@ -73,4 +78,49 @@ header {
 }
 .home-title-post h2 {
     font-size: 1rem;
+}
+.pagination ul {
+    list-style-type: none;
+    display: -webkit-box;
+    padding: 20px;
+    margin: 20px 0px;
+    border-top: solid 1px #dadada;
+    height: 50px;
+}
+.pagination a {
+    padding: 2px 7px;
+    margin: 2px;
+    border: solid 1px;
+    border-radius: 3px;
+}
+
+/* Responsive Media Query */
+@media only screen and (max-width: 768px) {
+    .home-content {
+		max-width: 159px;
+	}
+}
+
+@media only screen and (max-width: 425px){
+	.home-content {
+		max-width: 169px;
+	}
+}
+
+@media only screen and (max-width: 375px){
+	.home-content {
+		max-width: 145px;
+	}
+	.home-title-post {
+		max-width: 110px;
+	}
+}
+
+@media only screen and (max-width: 320px){
+	.home-content {
+		max-width: 119px;
+	}
+	.home-title-post {
+		max-width: 90px;
+	}
 }
